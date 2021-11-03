@@ -4,10 +4,10 @@ import dev.turra.codenames.common.network.Packet;
 
 public class PacketClientChat extends Packet {
 
-	public int sender;
+	public String sender;
 	public String message;
 
-	public PacketClientChat(int sender, String message) {
+	public PacketClientChat(String sender, String message) {
 		this.sender = sender;
 		this.message = message;
 	}
