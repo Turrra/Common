@@ -4,9 +4,13 @@ import dev.turra.codenames.common.network.Packet;
 
 public class PacketServerChat extends Packet {
 
-	public String message;
+	private String message;
 
 	public PacketServerChat(String message) {
 		this.message = message;
+	}
+
+	public String getMessage() {
+		return message;
 	}
 }

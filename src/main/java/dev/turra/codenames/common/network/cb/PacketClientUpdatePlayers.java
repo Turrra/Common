@@ -6,13 +6,25 @@ import dev.turra.codenames.common.network.Packet;
 
 public class PacketClientUpdatePlayers extends Packet {
 
-	public Team team;
-	public Role role;
-	public String players;
+	private Team team;
+	private Role role;
+	private String players;
 
 	public PacketClientUpdatePlayers(Team team, Role role, String players) {
 		this.team = team;
 		this.role = role;
 		this.players = players;
+	}
+
+	public Team getTeam() {
+		return team;
+	}
+
+	public Role getRole() {
+		return role;
+	}
+
+	public String getPlayers() {
+		return players;
 	}
 }

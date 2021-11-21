@@ -6,11 +6,19 @@ import dev.turra.codenames.common.Team;
 
 public class PacketServerTeamRole extends Packet {
 
-	public Team team;
-	public Role role;
+	private Team team;
+	private Role role;
 
 	public PacketServerTeamRole(Team team, Role role) {
 		this.team = team;
 		this.role = role;
 	}
+
+	public Team getTeam() {
+		return team;
+	}
+
+	public Role getRole() {
+        return role;
+    }
 }
