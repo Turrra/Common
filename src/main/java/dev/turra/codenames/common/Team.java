@@ -11,10 +11,16 @@ public enum Team {
 		this.color = color;
 	}
 
+	/**
+	 * @return Returns the name of the team
+	 */
 	public String getName() {
         return name;
     }
 
+	/**
+	 * @return Returns the color of the team
+	 */
 	public CardColor getColor() {
         return color;
     }

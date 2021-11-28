@@ -16,6 +16,9 @@ public enum CardColor {
 		this.color = color;
 	}
 
+	/**
+	 * @return Returns the {@link Color} value of the {@link CardColor}
+	 */
 	public Color getColor() {
 		return color;
 	}
